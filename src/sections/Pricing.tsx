@@ -9,45 +9,50 @@ import Link from 'next/link';
 
 const pricingTiers = [
   {
-    title: "UI/UX Design",
-    monthlyPrice: UIUX, 
-    buttonText: "UI/UX Design",
+    title: "AR VR ",
+    monthlyPrice: AR, 
+    buttonText: "AR-VR visualization ",
+    pageurl: "/ARVRPage",
     features: [
-      "Transforming ideas into impactful designs."
+      "Visual Things in Different way."
     ],
   },
   {
-    title: "Business Planning",
-    monthlyPrice: Planning, 
-    buttonText: "Business Planning",
+    title: "Enterprise Software Solutions ",
+    monthlyPrice: UIUX, 
+    buttonText: "Enterprise Software Solutions ",
+    pageurl: "/EnterPage",
     features: [
-      "Solutions and opportunities for success."
+      "Transforming ideas into impactful designs."
     ],
   },
   {
     title: "Website Development",
     monthlyPrice: WebDev, 
     buttonText: "Website Development",
+    pageurl: "/WEBDEVPage",
     features: [
       "Creating impactful online experiences."
     ],
   },
   {
-    title: "Cyber Security",
-    monthlyPrice: Cyber, 
-    buttonText: "Cyber Security",
+    title: "Business Planning",
+    monthlyPrice: Planning, 
+    buttonText: "Business Planning",
+    pageurl: "/BPLANPage",
     features: [
-      "Protecting your digital assets."
+      "Solutions and opportunities for success."
     ],
   },
-  {
-    title: "AR VR",
-    monthlyPrice: AR, 
-    buttonText: "AR-VR",
-    features: [
-      "Visual Things in Different way."
-    ],
-  },
+  
+  // {
+  //   title: "Cyber Security",
+  //   monthlyPrice: Cyber, 
+  //   buttonText: "Cyber Security",
+  //   features: [
+  //     "Protecting your digital assets."
+  //   ],
+  // },
 ];
 
 export const Pricing = () => {
@@ -59,10 +64,9 @@ export const Pricing = () => {
           <p className="section-description mt-5 "> 
             Leveraging expertise in corporate finance, branding, and agile project management, SketchItUp combines data-driven insights with creative strategies to enhance brand identity and accelerate growth.
           </p>
-          <button className='btn btn-primary w-full mt-[30px]'> <Link href="/ARVRPage">AR-VR</Link></button>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 '>
-          {pricingTiers.map(({ title, monthlyPrice, buttonText, features }) => (
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-6 mt-10 '>
+          {pricingTiers.map(({ title, monthlyPrice, buttonText, features,pageurl }) => (
             <div 
               key={title} 
               className='p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] flex flex-col items-center text-center'
@@ -75,7 +79,7 @@ export const Pricing = () => {
                   height={100} 
                 />
               </div>
-              <button className='btn btn-primary w-full mt-[30px]'>{buttonText}</button>
+              <Link href={pageurl}><button className='btn btn-primary w-full mt-[30px]'>{buttonText}</button></Link>
               <ul className='flex flex-col gap-5 mt-8'>
                 {features.map((feature, index) => (
                   <li key={index} className='text-sm flex items-center gap-4'>

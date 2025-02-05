@@ -1,21 +1,26 @@
 
-"use client"
+"use client";
 
 import { Header } from "@/sections/Header";
 import ArrowIcon from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/cog.png" ;
+import cogImage from "@/assets/cog.png";
 import vrgirl from "@/assets/ARVR/without img.png";
-import noodleImage from"@/assets/noodle.png";
-import productImage from '@/assets/product-image.png';
-import myProduct from '@/assets/newtech/MyProduct.png';
-// import entryvideo from '@/assets/ARVR/ServicesAssets/Virtual_Tours.mp4' ;
-import pyramidImage from'@/assets/pyramid.png';
-import tubeImage from'@/assets/tube.png';
-import Image from 'next/image';
-import { motion, useScroll, useTransform } from "framer-motion" ;
-import { useRef } from 'react';
+import noodleImage from "@/assets/noodle.png";
+import productImage from "@/assets/product-image.png";
+import myProduct from "@/assets/newtech/MyProduct.png";
+import pyramidImage from "@/assets/pyramid.png";
+import tubeImage from "@/assets/tube.png";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import FeaturesSection from "@/sections/FeaturesSection";
 import { Footer } from "@/sections/Footer";
+import ApplicationsSection from "@/sections/ApplicationsSection";
+
+// Dynamically import ReactPlayer and VideoSlideshow to prevent hydration errors
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+const VideoSlideshow = dynamic(() => import("../../../public/videos/VideoSlideshow"), { ssr: false });
 
 
 
@@ -93,17 +98,19 @@ const ARVRPage = () => {
     </div> */}
 
     {/* video section  */}
+
     <div className="relative mt-10">
       <div className="flex justify-center">
-        <video
-          className="w-full md:w-3/4 rounded-lg shadow-lg"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="src/assets/ARVR/ServicesAssets/Virtual_Tours.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <ReactPlayer
+          url="/videos/ServicesAssets/Website_Landing.webm"  // Path relative to the public folder
+          playing // Autoplay enabled
+          loop // Loop video
+          muted // Muted video
+          controls={false} // Hides controls (set to true if you want controls)
+          className="react-player rounded-lg shadow-lg"
+          width="100%" // Full-width for responsiveness
+          height="100%" // Auto height
+        />
       </div>
     </div>
 
@@ -150,34 +157,39 @@ const ARVRPage = () => {
           </ul>
         </div>
 
-        {/* Image Section */}
+        {/* Image Section
         <div className="flex justify-center">
           <Image
             src={myProduct}
             alt="image"
             className="w-3/4 md:w-full rounded-lg "
           />
-        </div>
+        </div> */}
 
         {/* video section  */}
-          {/* <div className="relative mt-10">
-            <div className="flex justify-center">
-              <video
-                className="w-full rounded-lg shadow-lg"
-                autoPlay
-                loop
-                muted
-              >
-                <source src="src/assets/ARVR/ServicesAssets/Virtual_Tours.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div> */}
+        <div className="relative mt-10">
+      <div className="flex justify-center">
+        <ReactPlayer
+          url="/videos/ServicesAssets/Virtual_Tours.mp4" // Path relative to the public folder
+          playing // Autoplay enabled
+          loop // Loop video
+          muted // Muted video
+          controls={false} // Hides controls (set to true if you want controls)
+          className="react-player rounded-lg shadow-lg"
+          width="100%" // Full-width for responsiveness
+          height="100%" // Auto height
+        />
+      </div>
+    </div>
       </div>
     </div>
 
   </div>
 </section>
+
+<VideoSlideshow></VideoSlideshow>
+
+<ApplicationsSection></ApplicationsSection>
 
 <Footer></Footer>
     </div>
