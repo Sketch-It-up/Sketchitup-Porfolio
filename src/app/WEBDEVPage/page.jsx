@@ -19,7 +19,7 @@ const WEBDEVPage = () => {
                 Experience Web-Design
               </h1>
               <p className="text-xl text-[#010D3E] mt-6">
-                Your digital presence is your brand's most powerful ambassador. We craft websites and brand identities that don't just look stunning – they deliver results.
+                Your digital presence is your brands most powerful ambassador. We craft websites and brand identities that dont just look stunning – they deliver results.
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ const WEBDEVPage = () => {
             {[
               {
                 title: "Custom Web Solutions",
-                description: "Bespoke websites that reflect your brand's unique identity",
+                description: "Bespoke websites that reflect your brands unique identity",
                 icon: <FaLaptopCode className="text-blue-600 text-4xl" />,
               },
               {
