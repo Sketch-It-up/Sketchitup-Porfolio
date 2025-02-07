@@ -99,7 +99,7 @@ export const Footer = () => {
                   href="mailto:a19nikhil5@gmail.com"
                   className="hover:underline text-blue-400"
                 >
-                  a19nikhil5@gmail.com
+                  sketchitup.official@gmail.com
                 </a>
               </li>
             </ul>

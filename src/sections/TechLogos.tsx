@@ -54,15 +54,14 @@ return (
       </div>
 
       <div>
-      <div className='max-w-[700px] mt-10 mx-auto'>
-            <h2 className='text-center text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text'>SketchItUp: Choose The Best Business Consultancy for Your Firm</h2>
+      <div className='max-w-[850px] mt-10 mx-auto '>
+            <h2 className='text-center  text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text'>Transform Your Visions & Ideas into Reality with <b>Sketchitup</b>   : Web Development, SaaS Solutions, AR/VR Experiences, and Startup Expertise</h2>
             <p className='text-center my-5 text-[22px] leading-[30px] tracking-tight text-[#020D3E]'>
-            Leveraging expertise in corporate finance, branding, and agile project management, SketchItUp combines data-driven insights with creative strategies to enhance brand identity and accelerate growth.
-            </p>
+            Welcome to Sketchitup! We are a one-stop solution for businesses looking to scale, innovate, and stand out. With expertise in web development, SaaS solutions, AR/VR immersive experiences, and startup consultancy, we bring your ideas to life. Whether youre a startup crafting your pitch deck or a real estate firm needing cutting-edge visualizations, we have got you covered.</p>
 
-            {/* <div className='flex justify-center'>
+            <div className='flex justify-center'>
             <div className='tag'>Start Your Growth Journey with Us</div>
-          </div> */}
+          </div>
             
         </div>
       </div>

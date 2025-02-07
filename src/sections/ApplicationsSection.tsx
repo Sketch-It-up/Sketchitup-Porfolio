@@ -39,8 +39,8 @@ const ApplicationsSection = () => {
     <section className="py-16 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
       <div className="container max-w-[1200px] mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl h-14 md:text-[54px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Applications
+          <h2 className="text-4xl h-14 md:text-[54px] mt-9 font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+            Services
           </h2>
           <p className="text-xl text-[#020D3E] mt-4">
             Explore how our solutions empower various aspects of real estate and design.
