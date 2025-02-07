@@ -18,14 +18,14 @@ export const Header = () => {
           <Link href="/"> <h6 className='text-3xl font-bold '>SketchitUp</h6></Link>
           </div>          
           <MenuIcon className ="h-5 w-5 md:hidden"></MenuIcon>
-          <nav className='hidden md:flex gap-6 text-black items-center'>
+          <nav className='hidden md:flex gap-6 text-black items-center font-semibold'>
             <a href="#home">Home</a>
-            <a href="#services">Our Servies</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="#services">Our Services</a>
+            <Link href="/GetInTouchPage">Contact</Link>
+            <Link href="/AboutUsPage">About</Link>
 
-            <button className='bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>Get in touch </button>
-          </nav>
+            <Link href="/GetInTouchPage"><button className='bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>Get in touch </button>
+          </Link></nav>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 
 import cylinderImage from "@/assets/cylinder.png";
-import cogImage from "@/assets/cog.png" ;
+import cogImage from "@/assets/Enterprice/Enterprice-img.png" ;
 import { motion } from "framer-motion";
 import Image from "next/image";
 

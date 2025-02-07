@@ -11,7 +11,7 @@ const pricingTiers = [
   {
     title: "AR VR ",
     monthlyPrice: AR, 
-    buttonText: "AR-VR visualization ",
+    buttonText: "AR  -  VR Visualization ",
     pageurl: "/ARVRPage",
     features: [
       "Visual Things in Different way."
@@ -38,7 +38,7 @@ const pricingTiers = [
   {
     title: "Business Planning",
     monthlyPrice: Planning, 
-    buttonText: "Business Planning",
+    buttonText: "Business Consultation",
     pageurl: "/BPLANPage",
     features: [
       "Solutions and opportunities for success."
@@ -57,9 +57,9 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <div className="container">
-        <div className='section-heading'>
+        <div className='section-heading max-w-[850px]'>
           <h2 className="section-title">Our Services</h2>
           <p className="section-description mt-5 "> 
             Leveraging expertise in corporate finance, branding, and agile project management, SketchItUp combines data-driven insights with creative strategies to enhance brand identity and accelerate growth.
@@ -79,7 +79,8 @@ export const Pricing = () => {
                   height={100} 
                 />
               </div>
-              <Link href={pageurl}><button className='btn btn-primary w-full mt-[30px]'>{buttonText}</button></Link>
+              <Link href={pageurl}><button className='btn btn-primary w-full mt-[30px] min-w-[150px]'>{buttonText}</button>
+              </Link>
               <ul className='flex flex-col gap-5 mt-8'>
                 {features.map((feature, index) => (
                   <li key={index} className='text-sm flex items-center gap-4'>

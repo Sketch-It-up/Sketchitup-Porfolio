@@ -5,6 +5,7 @@ import cogImage from "@/assets/cog.png" ;
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from"@/assets/noodle.png";
 import {motion, useScroll} from 'framer-motion';
+import Link from 'next/link';
 
 
 import Image from "next/image";
@@ -24,18 +25,19 @@ export const Hero = () => {
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
             <div className="tag"> 
-              Version 2.0 is here
+              Empowered By AI
             </div>
             <h1 className="text-5xl md:text-7xl py-2 font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
               Think Big, We make IT, possible! 
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              We place you at the center of international networks to advance your strategic interests. 
+            From innovative web solutions to immersive AR/VR experiences and startup consultancy, we help businesses thrive in the digital age. 
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary" > Our Services </button>
+              <a href="#services" ><button className="btn btn-primary" > Our Services </button></a>
               <button className="btn btn-text gap-1">
-                <span>Learn more</span>
+              <Link href="/AboutUsPage"><span>Learn more</span></Link>
+                
                 <ArrowIcon className="h-5 w-5"></ArrowIcon>
               </button>
             </div>

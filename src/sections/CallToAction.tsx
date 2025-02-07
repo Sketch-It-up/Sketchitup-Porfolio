@@ -1,6 +1,7 @@
 import starImage from '@/assets/star.png'
 import springimage from '@/assets/spring.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const CallToAction = () => {
   return (
@@ -12,10 +13,12 @@ export const CallToAction = () => {
             Celebrate the joy of accomplishment of the success we will create together with your support
           </p>
           <Image src={starImage} alt='Star Image' width={300} className=' absolute -left-[350px] -top-[137px]'></Image>
-          <Image src={springimage} alt='spring' width={300} className=' absolute -right-[331px] -top-[19px]' ></Image>
         </div>
+        
         <div className="flex gap-2 mt-10 justify-center">
-          <button className="btn btn-primary">Learn more</button>
+        <Link href="/GetInTouchPage"><button className="btn btn-primary">Learn more</button></Link>
+          
+
         </div>
       </div>
     </section>

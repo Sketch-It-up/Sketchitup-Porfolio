@@ -4,6 +4,16 @@ import React from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { motion } from "framer-motion";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
+import image from "@/assets/BPLAN/BPlan-Img.png"
+import Image from "next/image";
 
 const BusinessConsultationPage = () => {
   return (
@@ -18,9 +28,23 @@ const BusinessConsultationPage = () => {
                 Business Consultation & Advisory
               </h1>
               <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-                Strategic guidance to accelerate your business growth and optimize operations.
+                Strategic guidance to accelerate your business growth and
+                optimize operations. on industry trends, customer needs, and
+                technological advancements to stay competitive. Encourage a
+                culture of agility, where teams can quickly adapt to changes and
+                seize new opportunities.
               </p>
             </div>
+            <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
+              <Image
+                src={image}
+                alt="About Us Image"
+                className="md:absolute md:h-[65%] md:w-auto md:max-w-none md:left-6 md:top-16 lg:left-0"
+              />
+            </div>
+          </div>
+          <div className="flex gap-1 items-center ">
+            <button className="btn btn-primary"> Our Services </button>{" "}
           </div>
         </div>
       </section>
@@ -55,7 +79,9 @@ const BusinessConsultationPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-6 bg-white shadow-lg rounded-2xl"
               >
-                <h3 className="text-2xl font-bold text-[#001E80]">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-[#001E80]">
+                  {item.title}
+                </h3>
                 <ul className="mt-4 space-y-2 text-[#020D3E]">
                   {item.points.map((point, i) => (
                     <li key={i}>• {point}</li>
@@ -65,8 +91,22 @@ const BusinessConsultationPage = () => {
             ))}
           </div>
         </div>
+        <Carousel>
+        <CarouselContent>
+          <CarouselItem><Image
+                src={image}
+                alt="About Us Image"
+                className="md:absolute md:h-[65%] md:w-auto md:max-w-none md:left-6 md:top-16 lg:left-0"
+              /></CarouselItem>
+              <CarouselItem><div>Hello</div></CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+
       </section>
 
+      
       <section className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
@@ -96,13 +136,16 @@ const BusinessConsultationPage = () => {
             Why Choose Our Advisory Services
           </h2>
           <ul className="mt-12 space-y-4 text-lg text-[#020D3E]">
-            {["Experienced consultants with industry expertise",
+            {[
+              "Experienced consultants with industry expertise",
               "Data-driven approach to strategy development",
               "Proven methodologies for business growth",
               "Ongoing support and guidance",
               "Measurable results and ROI focus",
             ].map((reason, index) => (
-              <li key={index} className="p-4 bg-white shadow-lg rounded-2xl">• {reason}</li>
+              <li key={index} className="p-4 bg-white shadow-lg rounded-2xl">
+                • {reason}
+              </li>
             ))}
           </ul>
         </div>
