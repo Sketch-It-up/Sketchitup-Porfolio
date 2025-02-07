@@ -62,10 +62,10 @@ const EnterPage = () => {
               </p>
               <div className="flex gap-1 items-center mt-[30px]">
                 <a href="#services"><button className="btn btn-primary"> Our Services </button></a>
-                <button className="btn btn-text gap-1">
+                {/*<button className="btn btn-text gap-1">
                   <span>Learn more</span>
                   <ArrowIcon className="h-5 w-5"></ArrowIcon>
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
