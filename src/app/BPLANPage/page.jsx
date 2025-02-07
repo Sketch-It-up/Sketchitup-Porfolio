@@ -10,9 +10,16 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 
-import image from "@/assets/BPLAN/BPlan-Img.png"
+import image from "@/assets/BPLAN/BPlan-Img.png";
+import silde1 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_1.jpg";
+import silde2 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_2.jpg";
+import silde3 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_3.jpg";
+import silde4 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_4.jpg";
+import silde5 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_5.jpg";
+import silde6 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_6.jpg";
+
 import Image from "next/image";
 
 const BusinessConsultationPage = () => {
@@ -28,11 +35,7 @@ const BusinessConsultationPage = () => {
                 Business Consultation & Advisory
               </h1>
               <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-                Strategic guidance to accelerate your business growth and
-                optimize operations. on industry trends, customer needs, and
-                technological advancements to stay competitive. Encourage a
-                culture of agility, where teams can quickly adapt to changes and
-                seize new opportunities.
+                Strategic guidance to accelerate your business growth and optimize operations. on industry trends, customer needs, and technological advancements to stay competitive. Encourage a culture of agility, where teams can quickly adapt to changes and seize new opportunities.
               </p>
             </div>
             <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
@@ -44,8 +47,7 @@ const BusinessConsultationPage = () => {
             </div>
           </div>
           <div className="flex gap-1 items-center ">
-            <button className="btn btn-primary"> Our Services </button>{" "}
-          </div>
+              <button className="btn btn-primary" > Our Services </button> </div>
         </div>
       </section>
 
@@ -54,7 +56,71 @@ const BusinessConsultationPage = () => {
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
             Strategic Consulting
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          
+
+        <div className="container max-w-[1200px] mx-auto  mt-2">
+          <Carousel>
+            <CarouselContent>
+              <CarouselItem>
+                <div className="flex items-center justify-center mt-16">
+                  <Image
+                    src={silde1}
+                    alt="About Us Image"
+                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex items-center justify-center mt-16">
+                  <Image
+                    src={silde2}
+                    alt="About Us Image"
+                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex items-center justify-center mt-16">
+                  <Image
+                    src={silde3}
+                    alt="About Us Image"
+                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex items-center justify-center mt-16">
+                  <Image
+                    src={silde4}
+                    alt="About Us Image"
+                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex items-center justify-center mt-16">
+                  <Image
+                    src={silde5}
+                    alt="About Us Image"
+                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex items-center justify-center mt-16">
+                  <Image
+                    src={silde6}
+                    alt="About Us Image"
+                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                  />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {[
               {
                 title: "Growth Strategy",
@@ -79,9 +145,7 @@ const BusinessConsultationPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-6 bg-white shadow-lg rounded-2xl"
               >
-                <h3 className="text-2xl font-bold text-[#001E80]">
-                  {item.title}
-                </h3>
+                <h3 className="text-2xl font-bold text-[#001E80]">{item.title}</h3>
                 <ul className="mt-4 space-y-2 text-[#020D3E]">
                   {item.points.map((point, i) => (
                     <li key={i}>• {point}</li>
@@ -91,22 +155,8 @@ const BusinessConsultationPage = () => {
             ))}
           </div>
         </div>
-        <Carousel>
-        <CarouselContent>
-          <CarouselItem><Image
-                src={image}
-                alt="About Us Image"
-                className="md:absolute md:h-[65%] md:w-auto md:max-w-none md:left-6 md:top-16 lg:left-0"
-              /></CarouselItem>
-              <CarouselItem><div>Hello</div></CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-
       </section>
 
-      
       <section className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">

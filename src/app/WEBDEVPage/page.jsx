@@ -4,6 +4,28 @@ import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import React from "react";
 import { FaLaptopCode, FaShoppingCart, FaMobileAlt, FaSitemap, FaPenNib, FaPalette } from "react-icons/fa";
+import Image from "next/image";
+import aboutImage from "@/assets/WebDev/webdev-img.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+// Import images for the slideshow
+import slide1 from "@/assets/WebDev/WebDevelopment/WebDevelopment_01.jpg";
+import slide2 from "@/assets/WebDev/WebDevelopment/WebDevelopment_02.jpg";
+import slide3 from "@/assets/WebDev/WebDevelopment/WebDevelopment_03.jpg";
+import slide4 from "@/assets/WebDev/WebDevelopment/WebDevelopment_04.jpg";
+import slide5 from "@/assets/WebDev/WebDevelopment/WebDevelopment_05.jpg";
+import slide6 from "@/assets/WebDev/WebDevelopment/WebDevelopment_06.jpg";
+import slide7 from "@/assets/WebDev/WebDevelopment/WebDevelopment_07.jpg";
+import slide8 from "@/assets/WebDev/WebDevelopment/WebDevelopment_08.jpg";
+import slide9 from "@/assets/WebDev/WebDevelopment/WebDevelopment_09.jpg";
+import slide10 from "@/assets/WebDev/WebDevelopment/WebDevelopment_10.jpg";
+
 
 const WEBDEVPage = () => {
   return (
@@ -19,15 +41,25 @@ const WEBDEVPage = () => {
                 Experience Web-Design
               </h1>
               <p className="text-xl text-[#010D3E] mt-6">
-                Your digital presence is your brands most powerful ambassador. We craft websites and brand identities that dont just look stunning – they deliver results.
+                Your digital presence is your brands most powerful ambassador. We craft websites and brand identities that dont just look stunning  they deliver results. We combine creativity with strategy to ensure your brand stands out and connects with your audience.
               </p>
+              <div className="flex gap-1 items-center md:mt-8 ">
+                <a href="#services"><button className="btn btn-primary"> Our Services </button></a>{" "}
+              </div>
+            </div>
+            <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
+              <Image
+                src={aboutImage}
+                alt="About Us Image"
+                className="md:absolute md:h-[75%] md:w-auto md:max-w-none md:left-6 lg:left-0"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Website Development Section */}
-      <section className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16">
+      <section id="services" className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-[54px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
@@ -67,6 +99,34 @@ const WEBDEVPage = () => {
                 <p className="text-[#020D3E] mt-2">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Carousel Slideshow Section */}
+      <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
+        <div className="container max-w-[1200px] mx-auto px-4">
+          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+            Web Development Showcase
+          </h2>
+          <div className="mt-0 ">
+            <Carousel>
+              <CarouselContent>
+                {[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10].map((slide, index) => (
+                  <CarouselItem key={index}>
+                    <div className="flex items-center justify-center mt-16">
+                      <Image
+                        src={slide}
+                        alt={`Slide ${index + 1}`}
+                        className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
@@ -115,6 +175,8 @@ const WEBDEVPage = () => {
           </div>
         </div>
       </section>
+
+      
 
       <Footer />
     </div>
