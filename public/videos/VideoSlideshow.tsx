@@ -33,10 +33,10 @@ const VideoSlideshow = () => {
 
   return (
     <section className="py-16 bg-gray-100">
-  <div className="container max-w-[1200px] mx-auto px-4 py-5 mt-10 mb-10 ">
-    <h2 className="text-center  py-8 h-auto text-3xl md:text-[54px] font-bold bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
+  <div className="container max-w-[1200px] mx-auto px-4 py-5 mb-10 ">
+    {/* <h2 className="text-center  py-8 h-auto text-3xl md:text-[54px] font-bold bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
       Explore Our Work
-    </h2>
+    </h2> */}
     <Swiper
       modules={[Navigation, Pagination]}
       navigation
@@ -47,7 +47,7 @@ const VideoSlideshow = () => {
       loop={false}
       onSwiper={(swiper) => (swiperRef.current = swiper)} // Get Swiper instance
       onSlideChange={(swiper) => setPlayingIndex(swiper.activeIndex)} // Update playingIndex
-      className="rounded-lg shadow-lg mt-10 "
+      className="rounded-lg shadow-lg mt-2 "
     >
       {videoData.map((video, index) => (
         <SwiperSlide key={index} className="flex justify-center items-center">

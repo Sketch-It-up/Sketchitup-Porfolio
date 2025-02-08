@@ -13,14 +13,10 @@ import {
 } from "@/components/ui/carousel";
 
 import image from "@/assets/BPLAN/BPlan-Img.png";
-import silde1 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_1.jpg";
-import silde2 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_2.jpg";
-import silde3 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_3.jpg";
-import silde4 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_4.jpg";
-import silde5 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_5.jpg";
-import silde6 from "@/assets/BPLAN/BusinessAdvisory/BusinessAdvisory_6.jpg";
+
 
 import Image from "next/image";
+import BplanVideo from "../../../public/BplanVideo/BplanVideo";
 
 const BusinessConsultationPage = () => {
   return (
@@ -47,79 +43,22 @@ const BusinessConsultationPage = () => {
             </div>
           </div>
           <div className="flex gap-1 items-center ">
-              <button className="btn btn-primary" > Our Services </button> </div>
+             <a href="#services"> <button className="btn btn-primary" > Our Services </button> </div> </a>
         </div>
       </section>
 
       <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
-          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Strategic Consulting
-          </h2>
           
-
-        <div className="container max-w-[1200px] mx-auto  mt-2">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <div className="flex items-center justify-center mt-16">
-                  <Image
-                    src={silde1}
-                    alt="About Us Image"
-                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex items-center justify-center mt-16">
-                  <Image
-                    src={silde2}
-                    alt="About Us Image"
-                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex items-center justify-center mt-16">
-                  <Image
-                    src={silde3}
-                    alt="About Us Image"
-                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex items-center justify-center mt-16">
-                  <Image
-                    src={silde4}
-                    alt="About Us Image"
-                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex items-center justify-center mt-16">
-                  <Image
-                    src={silde5}
-                    alt="About Us Image"
-                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex items-center justify-center mt-16">
-                  <Image
-                    src={silde6}
-                    alt="About Us Image"
-                    className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                  />
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+      <section id="services" className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
+        <div className="container max-w-[1200px] mx-auto px-4">
+          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+          Strategic Consulting
+          </h2>
+          <BplanVideo></BplanVideo>
         </div>
+      </section>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {[
               {
