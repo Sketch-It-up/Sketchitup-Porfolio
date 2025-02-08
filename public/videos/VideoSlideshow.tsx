@@ -34,7 +34,7 @@ const VideoSlideshow = () => {
   return (
     <section className="py-16 bg-gray-100">
   <div className="container max-w-[1200px] mx-auto px-4 py-5 mt-10 mb-10 ">
-    <h2 className="text-center mb-8 h-auto text-3xl md:text-[54px] font-bold bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
+    <h2 className="text-center  py-8 h-auto text-3xl md:text-[54px] font-bold bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
       Explore Our Work
     </h2>
     <Swiper

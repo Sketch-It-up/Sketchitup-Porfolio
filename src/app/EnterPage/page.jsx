@@ -28,20 +28,21 @@ import {
 } from "@/components/ui/carousel";
 
 // Import images for the slideshow
-import slide1 from "@/assets/Enterprice/SaaS/Saas_01.jpg";
-import slide2 from "@/assets/Enterprice/SaaS/Saas_02.jpg";
-import slide3 from "@/assets/Enterprice/SaaS/Saas_03.jpg";
-import slide4 from "@/assets/Enterprice/SaaS/Saas_04.jpg";
-import slide5 from "@/assets/Enterprice/SaaS/Saas_05.jpg";
-import slide6 from "@/assets/Enterprice/SaaS/Saas_06.jpg";
-import slide7 from "@/assets/Enterprice/SaaS/Saas_07.jpg";
-import slide8 from "@/assets/Enterprice/SaaS/Saas_08.jpg";
-import slide9 from "@/assets/Enterprice/SaaS/Saas_09.jpg";
-import slide10 from "@/assets/Enterprice/SaaS/Saas_10.jpg";
-import slide11 from "@/assets/Enterprice/SaaS/Saas_11.jpg";
-import slide12 from "@/assets/Enterprice/SaaS/Saas_12.jpg";
-import slide13 from "@/assets/Enterprice/SaaS/Saas_13.jpg";
-import slide14 from "@/assets/Enterprice/SaaS/Saas_14.jpg";
+
+import slide1 from "../../../public/SaaS/Saas_01.jpg";
+import slide2 from "../../../public/SaaS/Saas_02.jpg";
+import slide3 from "../../../public/SaaS/Saas_03.jpg";
+import slide4 from "../../../public/SaaS/Saas_04.jpg";
+import slide5 from "../../../public/SaaS/Saas_05.jpg";
+import slide6 from "../../../public/SaaS/Saas_06.jpg";
+import slide7 from "../../../public/SaaS/Saas_07.jpg";
+import slide8 from "../../../public/SaaS/Saas_08.jpg";
+import slide9 from "../../../public/SaaS/Saas_09.jpg";
+import slide10 from "../../../public/SaaS/Saas_10.jpg";
+import slide11 from "../../../public/SaaS/Saas_11.jpg";
+import slide12 from "../../../public/SaaS/Saas_12.jpg";
+import slide13 from "../../../public/SaaS/Saas_13.jpg";
+import slide14 from "../../../public/SaaS/Saas_14.jpg";
 
 
 const EnterPage = () => {
@@ -62,10 +63,10 @@ const EnterPage = () => {
               </p>
               <div className="flex gap-1 items-center mt-[30px]">
                 <a href="#services"><button className="btn btn-primary"> Our Services </button></a>
-                {/*<button className="btn btn-text gap-1">
+                <button className="btn btn-text gap-1">
                   <span>Learn more</span>
                   <ArrowIcon className="h-5 w-5"></ArrowIcon>
-                </button> */}
+                </button>
               </div>
             </div>
             <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">

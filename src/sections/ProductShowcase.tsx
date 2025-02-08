@@ -25,22 +25,22 @@ export const ProductShowcase = () => {
     >
       <div className="container">
         <div className="max-w-[540px] mx-auto">
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <div className="tag">Boost your Product</div>
-          </div>
+          </div> */}
 
-          <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+          {/* <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
             A more effective way to Visualise places{" "}
           </h2>
           <p className="text-center my-5 text-[22px] leading-[30px] tracking-tight text-[#020D3E]">
             Effortlessly turn ideas into a fully function, responsive, Saas
             website in just minutes with this template.
-          </p>
+          </p> */}
         </div>
         <div className="relative">
           <div className="flex justify-center">
-            {/* <VideoSlideshow></VideoSlideshow> */}
-            <Image src={myProduct} alt="image" className=""></Image>
+            <VideoSlideshow></VideoSlideshow>
+            {/* <Image src={myProduct} alt="image" className=""></Image> */}
             {/* <div className="relative mt-10">
                 <div className="flex justify-center">
                   <ReactPlayer
@@ -57,7 +57,7 @@ export const ProductShowcase = () => {
               </div> */}
           </div>
 
-          <motion.img
+          {/* <motion.img
             src={pyramidImage.src}
             alt="pryimg"
             height={262}
@@ -77,7 +77,7 @@ export const ProductShowcase = () => {
             style={{
               translateY,
             }}
-          ></motion.img>
+          ></motion.img> */}
         </div>
       </div>
     </section>
