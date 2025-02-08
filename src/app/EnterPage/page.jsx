@@ -27,22 +27,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// Import images for the slideshow
 
-import slide1 from "../../../public/SaaS/Saas_01.jpg";
-import slide2 from "../../../public/SaaS/Saas_02.jpg";
-import slide3 from "../../../public/SaaS/Saas_03.jpg";
-import slide4 from "../../../public/SaaS/Saas_04.jpg";
-import slide5 from "../../../public/SaaS/Saas_05.jpg";
-import slide6 from "../../../public/SaaS/Saas_06.jpg";
-import slide7 from "../../../public/SaaS/Saas_07.jpg";
-import slide8 from "../../../public/SaaS/Saas_08.jpg";
-import slide9 from "../../../public/SaaS/Saas_09.jpg";
-import slide10 from "../../../public/SaaS/Saas_10.jpg";
-import slide11 from "../../../public/SaaS/Saas_11.jpg";
-import slide12 from "../../../public/SaaS/Saas_12.jpg";
-import slide13 from "../../../public/SaaS/Saas_13.jpg";
-import slide14 from "../../../public/SaaS/Saas_14.jpg";
+import SaasVideo from "../../../public/BplanVideo/BplanVideo";
+import EnterPriceVideo from "../../../public/EnterPrice/EnterPriceVideo";
 
 
 const EnterPage = () => {
@@ -95,27 +82,10 @@ const EnterPage = () => {
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
             SaaS Solutions Showcase
           </h2>
-          <div className="mt-4 px-16">
-            <Carousel>
-              <CarouselContent>
-                {[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14 ].map((slide, index) => (
-                  <CarouselItem key={index}>
-                    <div className="flex items-center justify-center mt-16 ">
-                      <Image
-                        src={slide}
-                        alt={`Slide ${index + 1}`}
-                        className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+          <EnterPriceVideo />
         </div>
       </section>
+      
       
       <section id="services" className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">

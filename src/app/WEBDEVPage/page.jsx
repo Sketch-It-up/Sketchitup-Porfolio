@@ -13,18 +13,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import WevDevVideo from "../../../public/WebDevVideo/WebDevVideo";
 
-// Import images for the slideshow
-import slide1 from "@/assets/WebDev/WebDevelopment/WebDevelopment_01.jpg";
-import slide2 from "@/assets/WebDev/WebDevelopment/WebDevelopment_02.jpg";
-import slide3 from "@/assets/WebDev/WebDevelopment/WebDevelopment_03.jpg";
-import slide4 from "@/assets/WebDev/WebDevelopment/WebDevelopment_04.jpg";
-import slide5 from "@/assets/WebDev/WebDevelopment/WebDevelopment_05.jpg";
-import slide6 from "@/assets/WebDev/WebDevelopment/WebDevelopment_06.jpg";
-import slide7 from "@/assets/WebDev/WebDevelopment/WebDevelopment_07.jpg";
-import slide8 from "@/assets/WebDev/WebDevelopment/WebDevelopment_08.jpg";
-import slide9 from "@/assets/WebDev/WebDevelopment/WebDevelopment_09.jpg";
-import slide10 from "@/assets/WebDev/WebDevelopment/WebDevelopment_10.jpg";
 
 
 const WEBDEVPage = () => {
@@ -107,27 +97,9 @@ const WEBDEVPage = () => {
       <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Web Development Showcase
+            Web DevelopMent Showcase
           </h2>
-          <div className="mt-0 ">
-            <Carousel>
-              <CarouselContent>
-                {[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10].map((slide, index) => (
-                  <CarouselItem key={index}>
-                    <div className="flex items-center justify-center mt-16">
-                      <Image
-                        src={slide}
-                        alt={`Slide ${index + 1}`}
-                        className="w-full h-auto md:h-[80vh] md:w-auto rounded-2xl"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+          <WevDevVideo />
         </div>
       </section>
 
