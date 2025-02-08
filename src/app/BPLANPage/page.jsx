@@ -43,7 +43,7 @@ const BusinessConsultationPage = () => {
             </div>
           </div>
           <div className="flex gap-1 items-center ">
-             <a href="#services"> <button className="btn btn-primary" > Our Services </button> </div> </a>
+             <button className="btn btn-primary" > Our Services </button> </div> 
         </div>
       </section>
 
