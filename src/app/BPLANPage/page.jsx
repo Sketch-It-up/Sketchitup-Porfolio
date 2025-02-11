@@ -4,13 +4,7 @@ import React from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { motion } from "framer-motion";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
 
 import image from "@/assets/BPLAN/BPlan-Img.png";
 
