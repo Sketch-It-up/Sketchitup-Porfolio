@@ -31,7 +31,7 @@ export const Hero = () => {
               Think Big, We make IT, possible! 
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-            From innovative web solutions to immersive AR/VR experiences and startup consultancy, we help businesses thrive in the digital age. 
+            From innovative web solutions to immersive AR/VR experiences and Startup Consultancy, we help businesses thrive in the digital age. 
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <a href="#services" ><button className="btn btn-primary" > Our Services </button></a>

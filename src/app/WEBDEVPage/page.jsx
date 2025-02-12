@@ -27,7 +27,7 @@ const WEBDEVPage = () => {
         <div className="container mx-auto px-4">
           <div className="md:flex items-center">
             <div className="md:w-1/2">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+              <h1 className="text-5xl p-4 md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
                 Experience Web-Design
               </h1>
               <p className="text-xl text-[#010D3E] mt-6">
@@ -52,7 +52,7 @@ const WEBDEVPage = () => {
       <section id="services" className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-[54px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+            <h2 className="text-4xl p-4 md:text-[54px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
               Website Development
             </h2>
             <p className="text-xl text-[#020D3E] mt-4">
@@ -107,7 +107,7 @@ const WEBDEVPage = () => {
       <section className="py-16 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-[54px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+            <h2 className="text-4xl p-4 md:text-[54px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
               Brand Identity Development
             </h2>
             <p className="text-xl text-[#020D3E] mt-4">

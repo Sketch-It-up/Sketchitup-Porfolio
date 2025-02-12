@@ -21,7 +21,7 @@ export const Header = () => {
           <nav className='hidden md:flex gap-6 text-black items-center font-semibold'>
             <a href="#home">Home</a>
             <a href="#services">Our Services</a>
-            <Link href="/GetInTouchPage">Contact</Link>
+            <Link href="/Blog_Page">Blog</Link>
             <Link href="/AboutUsPage">About</Link>
 
             <Link href="/GetInTouchPage"><button className='bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>Get in touch </button>

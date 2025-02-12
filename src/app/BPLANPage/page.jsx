@@ -25,7 +25,7 @@ const BusinessConsultationPage = () => {
                 Business Consultation & Advisory
               </h1>
               <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-                Strategic guidance to accelerate your business growth and optimize operations. on industry trends, customer needs, and technological advancements to stay competitive. Encourage a culture of agility, where teams can quickly adapt to changes and seize new opportunities.
+                Strategic guidance to accelerate your business growth and optimize operations. On industry trends, customer needs, and technological advancements to stay competitive. Encourage a culture of agility, where teams can quickly adapt to changes and seize new opportunities.
               </p>
             </div>
             <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
@@ -46,7 +46,7 @@ const BusinessConsultationPage = () => {
           
       <section id="services" className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
-          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+          <h2 className="text-center text-4xl p-4 md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
           Strategic Consulting
           </h2>
           <BplanVideo></BplanVideo>

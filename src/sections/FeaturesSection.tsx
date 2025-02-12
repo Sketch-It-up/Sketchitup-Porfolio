@@ -21,7 +21,7 @@ const FeaturesSection = () => {
     {
       icon: <FaMountain className="text-orange-500" />, // Panoramic Views icon
       title: "Panoramic Views",
-      description: "Sweeping vistas that showcase properties in their full context",
+      description: "Sweeping vistas that showcase properties in their full context with our technology",
     },
   ];
 

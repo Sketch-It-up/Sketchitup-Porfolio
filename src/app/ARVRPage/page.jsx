@@ -60,7 +60,7 @@ const ARVRPage = () => {
               </h1>
               <p className="text-xl text-[#010D3E] tracking-tight mt-6">
                 Transform your architectural visions into stunning virtual
-                realities with SketchitUps cutting edge AR/VR solutions. We
+                realities with our cutting edge AR/VR solutions. We
                 bridge the gap between imagination and experience, bringing your
                 real estate projects to life before they break ground.
               </p>
