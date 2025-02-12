@@ -39,11 +39,11 @@ const AboutUsPage = () => {
           <div className="md:flex items-center">
             <div className="md:w-1/2">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-                About Sketchitup Your Partner in Innovation and Growth
+                About SketchitUp Your Partner in Innovation and Growth
               </h1>
               <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-                At Sketchitup, we believe in the power of innovation to transform businesses. Sketchitup combines strategic business insights with cutting-edge technology to deliver exceptional results.
-                Our mission is to empower startups and businesses with tailored solutions, from web development and SaaS platforms to immersive AR/VR experiences. We are passionate about design, technology, and helping our clients succeed in a competitive landscape.
+                At SketchitUp, we believe in the power of innovation to transform businesses. SketchitUp combines strategic business insights with cutting-edge technology to deliver exceptional results.
+                Our mission is to empower startups and businesses with tailored solutions, from Web Development and SaaS platforms to immersive AR/VR experiences. We are passionate about design, technology, and helping our clients succeed in a competitive landscape.
                 Lets build something amazing together!
               </p>
               <div className="flex gap-1 items-center mt-[30px]">

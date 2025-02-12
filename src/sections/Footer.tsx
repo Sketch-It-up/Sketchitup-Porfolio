@@ -5,6 +5,7 @@ import SocialLinkedIn from '@/assets/social-linkedin.svg';
 import SocialPin from '@/assets/social-pin.svg';
 import SocialYoutube from '@/assets/social-youtube.svg';
 import Image from "next/image";
+import { Link } from "lucide-react";
 
 
 export const Footer = () => {
@@ -18,7 +19,7 @@ export const Footer = () => {
           {/* Left Column */}
           <div className="mb-6 lg:mb-0">
             <h2 className="text-white font-semibold text-2xl">SketchItUp</h2>
-            <p className="mt-2">Empowering businesses</p>
+            <p className="mt-2">Empowering Businesses</p>
             {/* <div className="mt-4 flex">
               <input
                 type="email"
@@ -37,7 +38,7 @@ export const Footer = () => {
               <h3 className="text-white font-semibold mb-2 text-xl">Information</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/AboutUsPage" className="hover:underline">
                     About Us
                   </a>
                 </li>
@@ -64,7 +65,7 @@ export const Footer = () => {
               <h3 className="text-white font-semibold mb-2 text-xl">Helpful Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/#services" className="hover:underline">
                     Our Services
                   </a>
                 </li>
@@ -124,7 +125,7 @@ export const Footer = () => {
           <SocialPin />    
           <SocialYoutube />
         </div>
-        <p className="mt-6">&copy; 2024 SkecthitUp, Inc. All rights reserved.</p>
+        <p className="mt-6">&copy; 2024 SketchitUp, Inc. All rights reserved.</p>
       </div>
     </footer>
   );

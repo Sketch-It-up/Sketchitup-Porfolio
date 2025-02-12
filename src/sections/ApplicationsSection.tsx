@@ -5,7 +5,7 @@ const ApplicationsSection = () => {
   const applications = [
     {
       icon: <FaDraftingCompass className="text-red-500" />, // Pre-construction Visualization icon
-      title: "Pre-construction Visualization",
+      title: "Pre-Construction Visualization",
       description: "Visualize architectural projects before breaking ground with photorealistic 3D models.",
     },
     {
