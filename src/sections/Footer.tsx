@@ -70,7 +70,7 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/GetInTouchPage" className="hover:underline">
                     Contact Us
                   </a>
                 </li>

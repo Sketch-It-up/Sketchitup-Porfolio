@@ -41,7 +41,7 @@ const ARVRPage = () => {
               <nav className="hidden md:flex gap-6 text-black items-center">
                 <a href="#home" >Home</a>
                 <a href="#services" >Our Services</a>
-                <Link href="/GetInTouchPage">Contact</Link>
+                <Link href="/Blog_Page">Blog</Link>
             <Link href="/AboutUsPage">About</Link>
             <Link href="/GetInTouchPage"><button className='bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>Get in touch </button>
             </Link>
@@ -60,7 +60,7 @@ const ARVRPage = () => {
               </h1>
               <p className="text-xl text-[#010D3E] tracking-tight mt-6">
                 Transform your architectural visions into stunning virtual
-                realities with our cutting edge AR/VR solutions. We
+                realities with  cutting edge AR/VR solutions. We
                 bridge the gap between imagination and experience, bringing your
                 real estate projects to life before they break ground.
               </p>

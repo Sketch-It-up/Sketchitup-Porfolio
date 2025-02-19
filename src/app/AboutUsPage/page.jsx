@@ -23,9 +23,9 @@ const AboutUsPage = () => {
       </div>          
       <MenuIcon className ="h-5 w-5 md:hidden"></MenuIcon>
       <nav className='hidden md:flex gap-6 text-black items-center font-semibold'>
-        <a href="#home">Home</a>
+        <a href="/#">Home</a>
         <Link href="/#services">Our Services</Link>
-        <Link href="/GetInTouchPage">Contact</Link>
+        <Link href="/Blog_Page">Blog</Link>
         <Link href="/AboutUsPage">About</Link>
 
         <Link href="/GetInTouchPage"><button className='bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight'>Get in touch </button>
@@ -73,10 +73,10 @@ const AboutUsPage = () => {
                 Company Details
               </h2>
               <p className="text-3xl text-gray-700 mb-2">
-                <strong>Sketchitup</strong>
+                <strong>SketchitUp</strong>
               </p>
               <p className="text-lg text-gray-700 mb-2">
-                Row House No. D3, <br></br> Ahilyadevi society, Baner, Pune - 411045
+                Row House No. D3, <br></br> Ahilyadevi Society, Baner, Pune - 411045
               </p>
               <p className="text-lg text-gray-700 mb-2">
                 Contact No: +91 95612 80118
