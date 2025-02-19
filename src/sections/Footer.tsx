@@ -17,7 +17,7 @@ export const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Left Column */}
-          <div className="mb-6 lg:mb-0">
+          <div className="mb-6 lg:mb-0 sm:mt-10">
             <h2 className="text-white font-semibold text-2xl">SketchItUp</h2>
             <p className="mt-2">Empowering Businesses</p>
             {/* <div className="mt-4 flex">
@@ -91,7 +91,7 @@ export const Footer = () => {
 
           {/* Right Column */}
           <div>
-            <h3 className="text-white font-semibold mb-2 text-xl">Contact Us</h3>
+            <h3 className="text-white sm:mt-10 font-semibold mb-2 text-xl">Contact Us</h3>
             <ul className="space-y-2">
               <li>Phone: +91 95612 80118</li>
               <li>

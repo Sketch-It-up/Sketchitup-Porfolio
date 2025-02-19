@@ -30,7 +30,7 @@ const BplanVideo = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-5 bg-gray-100">
   <div className="container max-w-[1200px] mx-auto px-4 py-5 mb-10 ">
 
     <Swiper
