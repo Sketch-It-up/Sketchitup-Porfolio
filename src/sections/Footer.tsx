@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Left Column */}
           <div className="mb-6 lg:mb-0 sm:mt-10">
-            <h2 className="text-white font-semibold text-2xl">SketchItUp</h2>
+            <h2 className="text-white font-semibold text-2xl">SketchitUp</h2>
             <p className="mt-2">Empowering Businesses</p>
             {/* <div className="mt-4 flex">
               <input
@@ -38,18 +38,18 @@ export const Footer = () => {
               <h3 className="text-white font-semibold mb-2 text-xl">Information</h3>
               <ul className="space-y-2">
                 <li>
+                  <a href="/#" className="hover:underline">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="/Blog_Page" className="hover:underline">
+                    Blog
+                  </a>
+                </li>
+                <li>
                   <a href="/AboutUsPage" className="hover:underline">
                     About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Events
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    More Search
                   </a>
                 </li>
                 

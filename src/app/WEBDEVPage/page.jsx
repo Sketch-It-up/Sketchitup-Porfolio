@@ -93,16 +93,6 @@ const WEBDEVPage = () => {
         </div>
       </section>
 
-      {/* Image Carousel Slideshow Section */}
-      <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
-        <div className="container max-w-[1200px] mx-auto px-4">
-          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Web DevelopMent Showcase
-          </h2>
-          <WevDevVideo />
-        </div>
-      </section>
-
       {/* Brand Identity Development Section */}
       <section className="py-16 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
         <div className="container mx-auto px-4">
@@ -148,7 +138,15 @@ const WEBDEVPage = () => {
         </div>
       </section>
 
-      
+      {/* Image Carousel Slideshow Section */}
+      <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
+        <div className="container max-w-[1200px] mx-auto px-4">
+          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+            Web DevelopMent Showcase
+          </h2>
+          <WevDevVideo />
+        </div>
+      </section>
 
       <Footer />
     </div>

@@ -42,7 +42,7 @@ export const Header = () => {
             <a href='/#home'>Home</a>
             <a href='/#services'>Our Services</a>
             <Link href='/Blog_Page'>Blog</Link>
-            <Link href='/AboutUsPage'>About</Link>
+            <Link href='/AboutUsPage'>About Us</Link>
             <Link href='/GetInTouchPage'>
               <button className='bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tight'>
                 Get in touch

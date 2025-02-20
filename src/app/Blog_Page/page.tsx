@@ -4,29 +4,45 @@ import React from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { motion } from "framer-motion";
-import BlogContent from "@/sections/BlogContent"; // Importing the BlogContent component
+import BlogContent from "@/sections/BlogContent"; 
+import blogImage from "@/assets/BlogPage/Blog_Page_2.png";
+import Image from "next/image";
 
 const BlogPage = () => {
   return (
     <div>
       <Header />
 
-      {/* Hero Section */}
+
       <section className="pt-8 pb-20 bg-gradient-to-b from-[#EAEEFE] to-[#183EC2] overflow-x-clip">
-        <div className="container max-w-[1200px] mx-auto px-4 text-center">
-          <h1 className="text-5xl p-4 md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Welcome to Our Blog 
-          </h1>
-          <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-            Explore the latest insights, trends, and expert advice on business, finance, and technology.
-          </p>
+        <div className="container max-w-[1200px] mx-auto px-4">
+          <div className="md:flex items-center">
+            <div className="md:w-1/2 text-center md:text-left">
+              <h1 className="text-5xl p-4 md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+                Explore Our Insights
+              </h1>
+              <p className="text-xl text-[#010D3E] tracking-tight mt-6">
+                Stay updated with the latest trends, tips, and insights in web development, digital marketing, and design.
+                Our blog brings you expert knowledge to help you grow your online presence and make informed decisions.        
+                </p>
+                <div className="flex gap-1 items-center mt-[30px]">
+                <a href="#blogs" ><button className="btn btn-primary"> Learn More </button></a>
+              </div>
+            </div>
+            
+            <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+              <Image
+                src={blogImage}
+                alt="Blog Page Image"
+                className="md:w-full md:max-w-lg rounded-2xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Latest Blog Posts Section */}
-      <BlogContent /> {/* Here we use BlogContent to dynamically display the blog posts */}
+      <section id="blogs"><BlogContent /></section>
 
-      {/* Categories Section */}
       <section className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
         <div className="container max-w-[1200px] mx-auto px-4 text-center">
           <h2 className="text-4xl p-4 md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
@@ -46,7 +62,6 @@ const BlogPage = () => {
         </div>
       </section>
 
-      {/* Newsletter Subscription */}
       <section className="py-20 bg-[#001E80] text-white text-center">
         <div className="container max-w-[800px] mx-auto px-4">
           <h2 className="text-4xl font-bold">Subscribe to Our Newsletter</h2>

@@ -4,6 +4,8 @@ import React from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import ArrowIcon from "@/assets/arrow-right.svg";
+import EnterpriseSection from "@/sections/EnterpriseSection";
+import ImplementationApproach from "@/sections/ImplementationApproach";
 import {
   FaReact,
   FaAngular,
@@ -75,50 +77,12 @@ const EnterPage = () => {
           </div>
         </div>
       </section>
-      
-      
-      <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
-        <div className="container max-w-[1200px] mx-auto px-4">
-          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            SaaS Solutions Showcase
-          </h2>
-          <EnterPriceVideo />
-        </div>
-      </section>
-      
-      
+
+      <EnterpriseSection /> 
+
       <section id="services" className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
-          <div className="my-10 md:mt-0 md:flex-1">
-            <motion.div
-              className="bg-white p-8 shadow-lg rounded-2xl"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              <h2 className="text-2xl font-bold text-[#001E80]">
-                Our Services
-              </h2>
-              <ul className="mt-4 space-y-4 text-[#020D3E]">
-                <li>
-                  <b>• ERP Systems:</b> Integrated solutions for comprehensive
-                  business management
-                </li>
-                <li>
-                  <b>• Analytics Dashboards:</b> Real-time insights for informed
-                  decision-making
-                </li>
-                <li>
-                  <b>• Order Management Systems:</b> Streamlined processing from
-                  order to delivery
-                </li>
-                <li>
-                  <b>• CRM Solutions:</b> Enhanced customer relationship management
-                  tools
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-
+          
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
             Our Technology Stack
           </h2>
@@ -178,36 +142,17 @@ const EnterPage = () => {
           </div>
         </div>
       </section>
+      
+      <ImplementationApproach />
 
-      <section className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
+      <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Implementation Approach
+            SaaS Solutions Showcase
           </h2>
-          <div className="mt-12 space-y-6">
-            {[
-              "Requirements Analysis: Deep dive into your business processes",
-              "Solution Design: Architecture and workflow planning",
-              "Agile Development: Iterative development with regular feedback",
-              "Testing & QA: Comprehensive quality assurance",
-              "Deployment: Smooth transition to production",
-              "Support: Ongoing maintenance and updates",
-            ].map((step, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="p-6 bg-white shadow-lg rounded-2xl flex items-start space-x-4"
-              >
-                <div className="text-2xl font-bold text-[#001E80]">
-                  {index + 1}
-                </div>
-                <p className="text-[#020D3E]">{step}</p>
-              </motion.div>
-            ))}
-          </div>
+          <EnterPriceVideo />
         </div>
       </section>
-
 
       <Footer />
     </div>
