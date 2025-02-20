@@ -4,12 +4,11 @@ import React from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import { motion } from "framer-motion";
-
-
-import image from "@/assets/BPLAN/BPlan-Img.png";
-
-
 import Image from "next/image";
+import image from "@/assets/BPLAN/BPlan-Img.png";
+import image1 from "@/assets/BPLAN/startupImg-Photoroom.png";
+import image2 from "@/assets/BPLAN/Financial Services-Img.png";
+import image3 from "@/assets/BPLAN/ORK-img2.png";
 import BplanVideo from "../../../public/BplanVideo/BplanVideo";
 
 const BusinessConsultationPage = () => {
@@ -37,23 +36,23 @@ const BusinessConsultationPage = () => {
             </div>
           </div>
           <div className="flex gap-1 items-center ">
-             <button className="btn btn-primary" > Our Services </button> </div> 
+            <a href="#Services"><button className="btn btn-primary"> Our Services </button></a>
+          </div>
         </div>
       </section>
 
       <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
-          
-      <section id="services" className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
-        <div className="container max-w-[1200px] mx-auto px-4">
-          <h2 className="text-center text-4xl p-4 md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-          Strategic Consulting
-          </h2>
-          <BplanVideo></BplanVideo>
-        </div>
-      </section>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <section id="services" className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
+            <div className="container max-w-[1200px] mx-auto px-4">
+              <h2 className="text-center text-4xl p-4 md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+                Strategic Consulting
+              </h2>
+              <BplanVideo></BplanVideo>
+            </div>
+          </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {[
               {
                 title: "Growth Strategy",
@@ -90,25 +89,82 @@ const BusinessConsultationPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
+      <section id="Services" className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
         <div className="container max-w-[1200px] mx-auto px-4">
           <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-            Financial Services
+          Financial Services
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {[
-              "Financial Modeling: Custom models for business scenarios",
+          <div className="md:flex items-center ">
+            <div className="md:w-1/2">
+              <ul className="space-y-4 text-lg text-[#020D3E]">
+                {["Financial Modeling: Custom models for business scenarios",
               "Projections: Detailed forecasting and analysis",
-              "Performance Metrics: KPI development and tracking",
-            ].map((point, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="p-6 bg-white shadow-lg rounded-2xl"
-              >
-                <p className="text-[#020D3E]">• {point}</p>
-              </motion.div>
-            ))}
+              "Performance Metrics: KPI development and tracking",].map((service, index) => (
+                  <li key={index} className="p-4 bg-white shadow-lg rounded-2xl">• {service}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="md:w-1/2 flex justify-center">
+              <Image
+                src={image2}
+                alt="Startup Services Image"
+                className="md:w-auto md:max-w-sm"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF]">
+        <div className="container max-w-[1200px] mx-auto px-4">
+          <h2 className="text-center text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+            Startup Services
+          </h2>
+          <div className="md:flex items-center">
+            <div className="md:w-1/2 flex justify-center">
+              <Image
+                src={image1}
+                alt="Startup Services Image"
+                className="md:w-auto md:max-w-sm"
+              />
+            </div>
+            <div className="md:w-1/2">
+              <ul className="space-y-4 text-lg text-[#020D3E]">
+                {["Incubation: Guidance through early-stage growth",
+                  "Pitch Deck Creation: Compelling investor presentations",
+                  "Funding Strategy: Investment planning and preparation"].map((service, index) => (
+                  <li key={index} className="p-4 bg-white shadow-lg rounded-2xl">• {service}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>    
+
+      <section className="py-20 bg-gradient-to-b from-[#D2DCFF] to-[#FFFFFF]">
+
+        <div className="container max-w-[1200px] mx-auto px-4">
+          <h2 className="text-center text-4xl mb-5 md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
+          OKR Framework
+          </h2>
+          <div className="md:flex items-center ">
+            <div className="md:w-1/2">
+              <ul className="space-y-4 text-lg text-[#020D3E]">
+                {["Framework Design: Custom OKR development",
+              "Implementation: System setup and team training",
+              "Monitoring: Regular review and adjustment",
+              "KPI Development: Meaningful metrics alignment"].map((service, index) => (
+                  <li key={index} className="p-4 bg-white shadow-lg rounded-2xl">• {service}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="md:w-1/2 flex justify-center">
+              <Image
+                src={image3}
+                alt="Startup Services Image"
+                className="md:w-auto md:max-w-sm"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -133,6 +189,7 @@ const BusinessConsultationPage = () => {
           </ul>
         </div>
       </section>
+
       <Footer />
     </div>
   );
