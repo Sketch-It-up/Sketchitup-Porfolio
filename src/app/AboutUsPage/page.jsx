@@ -70,11 +70,11 @@ const AboutUsPage = () => {
           <div className="md:flex items-start">
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-black mb-4">
-                Company Details
+                SketchitUp
               </h2>
-              <p className="text-3xl text-gray-700 mb-2">
+              {/* <p className="text-3xl text-gray-700 mb-2">
                 <strong>SketchitUp</strong>
-              </p>
+              </p> */}
               <p className="text-lg text-gray-700 mb-2">
                 Row House No. D3, <br></br> Ahilyadevi Society, Baner, Pune - 411045
               </p>
