@@ -75,12 +75,12 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/PrivacyPolicyPage" className="hover:underline">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/TermsPage" className="hover:underline">
                     Terms & Condition
                   </a>
                 </li>

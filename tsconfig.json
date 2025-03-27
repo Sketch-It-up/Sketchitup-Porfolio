@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/TermsPage/page.jsx", "src/app/PrivacyPolicyPage/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
