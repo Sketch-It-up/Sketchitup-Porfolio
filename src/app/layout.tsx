@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import Head from "next/head";
+import Script from "next/script";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -18,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <Head>
-        <script
-          type="text/javascript"
+      <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
+        {/* Microsoft Clarity Script */}
+        <Script
+          id="clarity-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){
@@ -31,8 +33,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </Head>
-      <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
       </body>
     </html>
