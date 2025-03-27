@@ -27,7 +27,7 @@ const TermsPage = () => {
             <p className="text-gray-700">
               <strong>1. Introduction</strong>
               <br />
-              Welcome to SketchItUp. By accessing and using our website ("Website") and services ("Services"), you agree to comply with and be bound by these Terms & Conditions ("T&C"). If you do not agree, please do not use our Services.
+              Welcome to SketchItUp. By accessing and using our website (Website) and services (Services), you agree to comply with and be bound by these Terms & Conditions (T&C). If you do not agree, please do not use our Services.
             </p>
             <p className="text-gray-700">
               <strong>2. User Eligibility & Account Registration</strong>
