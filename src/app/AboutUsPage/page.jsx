@@ -58,7 +58,7 @@ const AboutUsPage = () => {
                 Row House No. D3, <br></br> Ahilyadevi Society, Baner, Pune - 411045
               </p>
               <p className="text-lg text-gray-700 mb-2">
-                Contact No: +91 95612 80118
+                Contact No: +91 9999 9999
               </p>
               <p className="text-lg text-gray-700 mb-2">
                 Email: <a href="mailto:sketchitup.official@gmail.com" className="text-blue-500">sketchitup.official@gmail.com</a>
